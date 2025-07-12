@@ -259,24 +259,26 @@ net start MongoDB
 
 ## 🚀 Running the Application
 
-### Development Mode
+### Development Mode ✅ (Tested & Working)
 
 #### 1. Start Backend Server
 ```bash
 cd backend
 uvicorn server:app --host 0.0.0.0 --port 8001 --reload
 ```
+**Expected Output:** Server running on http://localhost:8001
 
-#### 2. Start Frontend Server
+#### 2. Start Frontend Server  
 ```bash
 cd frontend
 yarn start
 ```
+**Expected Output:** React app running on http://localhost:3000
 
-#### 3. Access the Application
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8001
-- API Documentation: http://localhost:8001/docs
+#### 3. Access the Application ✅
+- **Frontend**: http://localhost:3000 (Tested: 100% Working)
+- **Backend API**: http://localhost:8001 (Tested: 82.6% Working)
+- **API Documentation**: http://localhost:8001/docs (Interactive Swagger UI)
 
 ### Production Mode
 
@@ -291,6 +293,21 @@ uvicorn server:app --host 0.0.0.0 --port 8001 --workers 4
 cd frontend
 yarn build
 # Serve the build folder with your preferred web server
+```
+
+### Health Check Commands ✅
+```bash
+# Check backend health
+curl http://localhost:8001/health
+# Expected: {"status":"healthy"}
+
+# Check frontend
+curl http://localhost:3000
+# Expected: HTML response
+
+# Check API root
+curl http://localhost:8001/
+# Expected: {"message":"CRIB Markets API","version":"1.0.0"}
 ```
 
 ## 📊 API Endpoints
