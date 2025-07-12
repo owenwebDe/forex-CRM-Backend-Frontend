@@ -1,0 +1,508 @@
+[
+  {
+    "test": "Health Check",
+    "success": false,
+    "details": "Status code: No response",
+    "timestamp": "2025-07-12T02:57:28.651051",
+    "response_data": null
+  },
+  {
+    "test": "Root Endpoint",
+    "success": false,
+    "details": "Status code: No response",
+    "timestamp": "2025-07-12T02:57:28.670446",
+    "response_data": null
+  },
+  {
+    "test": "User Registration",
+    "success": true,
+    "details": "User ID: b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+    "timestamp": "2025-07-12T02:57:29.024122",
+    "response_data": {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiNmYxZGY3ZS1iYTZiLTRhNjUtYjM0OS0wZGIxN2ZkNjRhN2QiLCJleHAiOjE3NTIyOTA4NDl9.DtnRGSksKG0qS2Pw7a_I2y-dHu-tXXhZORBFnJ6jGGc",
+      "token_type": "bearer",
+      "user": {
+        "id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+        "name": "John Trader",
+        "email": "john.trader@example.com",
+        "phone": "+1234567890",
+        "country": "United States",
+        "city": "New York",
+        "address": "123 Wall Street",
+        "balance": 0.0,
+        "role": "user",
+        "kyc_status": "pending",
+        "is_active": true,
+        "created_at": "2025-07-12T02:57:29.007851",
+        "mt5_accounts": []
+      }
+    }
+  },
+  {
+    "test": "Admin Registration",
+    "success": true,
+    "details": "Admin ID: 774ca945-6e2a-4c40-8be5-864c848f30d9",
+    "timestamp": "2025-07-12T02:57:29.354016",
+    "response_data": {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NzRjYTk0NS02ZTJhLTRjNDAtOGJlNS04NjRjODQ4ZjMwZDkiLCJleHAiOjE3NTIyOTA4NDl9._kV1BFn59rlzS8IuIP4nhnuod4kPK5FXS_Gegw1mxGA",
+      "token_type": "bearer",
+      "user": {
+        "id": "774ca945-6e2a-4c40-8be5-864c848f30d9",
+        "name": "Admin User",
+        "email": "admin.test@cribmarkets.com",
+        "phone": "+1987654321",
+        "country": "United States",
+        "city": "New York",
+        "address": "456 Admin Street",
+        "balance": 0.0,
+        "role": "user",
+        "kyc_status": "pending",
+        "is_active": true,
+        "created_at": "2025-07-12T02:57:29.307434",
+        "mt5_accounts": []
+      }
+    }
+  },
+  {
+    "test": "User Login",
+    "success": true,
+    "details": "Login successful",
+    "timestamp": "2025-07-12T02:57:29.647089",
+    "response_data": {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiNmYxZGY3ZS1iYTZiLTRhNjUtYjM0OS0wZGIxN2ZkNjRhN2QiLCJleHAiOjE3NTIyOTA4NDl9.DtnRGSksKG0qS2Pw7a_I2y-dHu-tXXhZORBFnJ6jGGc",
+      "token_type": "bearer",
+      "user": {
+        "id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+        "name": "John Trader",
+        "email": "john.trader@example.com",
+        "phone": "+1234567890",
+        "country": "United States",
+        "city": "New York",
+        "address": "123 Wall Street",
+        "balance": 0.0,
+        "role": "user",
+        "kyc_status": "pending",
+        "is_active": true,
+        "created_at": "2025-07-12T02:57:29.007000",
+        "mt5_accounts": []
+      }
+    }
+  },
+  {
+    "test": "Get Current User",
+    "success": true,
+    "details": "User: John Trader",
+    "timestamp": "2025-07-12T02:57:29.699022",
+    "response_data": {
+      "id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+      "name": "John Trader",
+      "email": "john.trader@example.com",
+      "phone": "+1234567890",
+      "country": "United States",
+      "city": "New York",
+      "address": "123 Wall Street",
+      "balance": 0.0,
+      "role": "user",
+      "kyc_status": "pending",
+      "is_active": true,
+      "created_at": "2025-07-12T02:57:29.007000",
+      "mt5_accounts": []
+    }
+  },
+  {
+    "test": "User Profile",
+    "success": true,
+    "details": "Profile for: John Trader",
+    "timestamp": "2025-07-12T02:57:29.753365",
+    "response_data": {
+      "id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+      "name": "John Trader",
+      "email": "john.trader@example.com",
+      "phone": "+1234567890",
+      "country": "United States",
+      "city": "New York",
+      "address": "123 Wall Street",
+      "balance": 0.0,
+      "role": "user",
+      "kyc_status": "pending",
+      "is_active": true,
+      "created_at": "2025-07-12T02:57:29.007000",
+      "mt5_accounts": []
+    }
+  },
+  {
+    "test": "MT5 Connect",
+    "success": false,
+    "details": "Status: No response",
+    "timestamp": "2025-07-12T02:57:29.953331",
+    "response_data": {}
+  },
+  {
+    "test": "MT5 Account Info",
+    "success": true,
+    "details": "Balance: 0.0",
+    "timestamp": "2025-07-12T02:57:29.965340",
+    "response_data": {
+      "login": 12345,
+      "balance": 0.0,
+      "equity": 0.0,
+      "margin": 0.0,
+      "free_margin": 0.0,
+      "profit": 0.0,
+      "credit": 0.0,
+      "leverage": 100,
+      "name": "John Trader",
+      "server": "Demo",
+      "currency": "USD"
+    }
+  },
+  {
+    "test": "MT5 Positions",
+    "success": true,
+    "details": "Positions count: 0",
+    "timestamp": "2025-07-12T02:57:30.016909",
+    "response_data": []
+  },
+  {
+    "test": "MT5 Orders",
+    "success": true,
+    "details": "Orders count: 0",
+    "timestamp": "2025-07-12T02:57:30.029318",
+    "response_data": []
+  },
+  {
+    "test": "MT5 History",
+    "success": true,
+    "details": "History count: 0",
+    "timestamp": "2025-07-12T02:57:30.080274",
+    "response_data": []
+  },
+  {
+    "test": "Payment Creation",
+    "success": true,
+    "details": "Payment ID: 259137ce-fe39-4ef1-be9b-be843d2adb08",
+    "timestamp": "2025-07-12T02:57:30.101540",
+    "response_data": {
+      "payment_id": "259137ce-fe39-4ef1-be9b-be843d2adb08",
+      "status": "pending",
+      "payment_data": {
+        "error": "'NoneType' object has no attribute 'Session'",
+        "status": "failed"
+      },
+      "reference": null
+    }
+  },
+  {
+    "test": "Payment History",
+    "success": true,
+    "details": "Payments count: 1",
+    "timestamp": "2025-07-12T02:57:30.156996",
+    "response_data": [
+      {
+        "id": "259137ce-fe39-4ef1-be9b-be843d2adb08",
+        "amount": 100.0,
+        "currency": "USD",
+        "method": "stripe",
+        "status": "pending",
+        "reference": null,
+        "created_at": "2025-07-12T02:57:30.088000",
+        "updated_at": "2025-07-12T02:57:30.088000"
+      }
+    ]
+  },
+  {
+    "test": "Withdrawal Request",
+    "success": false,
+    "details": "Status: No response",
+    "timestamp": "2025-07-12T02:57:30.169515",
+    "response_data": {}
+  },
+  {
+    "test": "Charts Equity Data",
+    "success": true,
+    "details": "Data points: 30",
+    "timestamp": "2025-07-12T02:57:30.180177",
+    "response_data": {
+      "labels": [
+        "06/12",
+        "06/13",
+        "06/14",
+        "06/15",
+        "06/16",
+        "06/17",
+        "06/18",
+        "06/19",
+        "06/20",
+        "06/21",
+        "06/22",
+        "06/23",
+        "06/24",
+        "06/25",
+        "06/26",
+        "06/27",
+        "06/28",
+        "06/29",
+        "06/30",
+        "07/01",
+        "07/02",
+        "07/03",
+        "07/04",
+        "07/05",
+        "07/06",
+        "07/07",
+        "07/08",
+        "07/09",
+        "07/10",
+        "07/11"
+      ],
+      "equity_data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "balance_data": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "test": "Charts Monthly Deposits",
+    "success": true,
+    "details": "Months: 12",
+    "timestamp": "2025-07-12T02:57:30.232697",
+    "response_data": {
+      "labels": [
+        "Aug 2024",
+        "Sep 2024",
+        "Oct 2024",
+        "Nov 2024",
+        "Dec 2024",
+        "Jan 2025",
+        "Feb 2025",
+        "Mar 2025",
+        "Apr 2025",
+        "May 2025",
+        "Jun 2025",
+        "Jul 2025"
+      ],
+      "deposit_data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "test": "Charts Monthly Withdrawals",
+    "success": true,
+    "details": "Months: 12",
+    "timestamp": "2025-07-12T02:57:30.244116",
+    "response_data": {
+      "labels": [
+        "Aug 2024",
+        "Sep 2024",
+        "Oct 2024",
+        "Nov 2024",
+        "Dec 2024",
+        "Jan 2025",
+        "Feb 2025",
+        "Mar 2025",
+        "Apr 2025",
+        "May 2025",
+        "Jun 2025",
+        "Jul 2025"
+      ],
+      "withdrawal_data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "test": "Document Upload",
+    "success": true,
+    "details": "Document ID: bc5a5656-79c8-49cd-9788-d09cbd2295a5",
+    "timestamp": "2025-07-12T02:57:30.280232",
+    "response_data": {
+      "id": "bc5a5656-79c8-49cd-9788-d09cbd2295a5",
+      "user_id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+      "document_type": "passport",
+      "file_name": "passport.jpg",
+      "mime_type": "image/jpeg",
+      "status": "pending",
+      "uploaded_at": "2025-07-12T02:57:30.252711",
+      "reviewed_at": null,
+      "reviewer_notes": null
+    }
+  },
+  {
+    "test": "Document List",
+    "success": true,
+    "details": "Documents count: 1",
+    "timestamp": "2025-07-12T02:57:30.290412",
+    "response_data": [
+      {
+        "id": "bc5a5656-79c8-49cd-9788-d09cbd2295a5",
+        "user_id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+        "document_type": "passport",
+        "file_name": "passport.jpg",
+        "mime_type": "image/jpeg",
+        "status": "pending",
+        "uploaded_at": "2025-07-12T02:57:30.252000",
+        "reviewed_at": null,
+        "reviewer_notes": null
+      }
+    ]
+  },
+  {
+    "test": "Bank Details",
+    "success": true,
+    "details": "Bank: Test Bank",
+    "timestamp": "2025-07-12T02:57:30.370999",
+    "response_data": {
+      "id": "bank_b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+      "user_id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+      "bank_name": "Test Bank",
+      "account_name": "John Trader",
+      "account_number": "1234567890",
+      "routing_number": "021000021",
+      "swift_code": "TESTUS33",
+      "iban": "US12345678901234567890",
+      "bank_address": "123 Bank Street, New York, NY",
+      "account_type": "checking",
+      "verified": false,
+      "created_at": "2025-07-12T02:57:30.295714"
+    }
+  },
+  {
+    "test": "Ticket Creation",
+    "success": true,
+    "details": "Ticket ID: 0e699734-11e9-43eb-9930-21c9e74041cd",
+    "timestamp": "2025-07-12T02:57:30.396526",
+    "response_data": {
+      "id": "0e699734-11e9-43eb-9930-21c9e74041cd",
+      "user_id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+      "subject": "Test Support Ticket",
+      "description": "This is a test support ticket for API testing",
+      "category": "technical",
+      "priority": "medium",
+      "status": "open",
+      "created_at": "2025-07-12T02:57:30.380172",
+      "updated_at": "2025-07-12T02:57:30.380174",
+      "closed_at": null,
+      "assigned_to": null,
+      "messages": []
+    }
+  },
+  {
+    "test": "Ticket List",
+    "success": true,
+    "details": "Tickets count: 1",
+    "timestamp": "2025-07-12T02:57:30.446799",
+    "response_data": [
+      {
+        "id": "0e699734-11e9-43eb-9930-21c9e74041cd",
+        "user_id": "b6f1df7e-ba6b-4a65-b349-0db17fd64a7d",
+        "subject": "Test Support Ticket",
+        "description": "This is a test support ticket for API testing",
+        "category": "technical",
+        "priority": "medium",
+        "status": "open",
+        "created_at": "2025-07-12T02:57:30.380000",
+        "updated_at": "2025-07-12T02:57:30.380000",
+        "closed_at": null,
+        "assigned_to": null,
+        "messages": []
+      }
+    ]
+  },
+  {
+    "test": "Admin Dashboard",
+    "success": false,
+    "details": "Status: No response (Expected if user is not admin)",
+    "timestamp": "2025-07-12T02:57:30.468789",
+    "response_data": {}
+  },
+  {
+    "test": "Admin Users",
+    "success": false,
+    "details": "Status: No response (Expected if user is not admin)",
+    "timestamp": "2025-07-12T02:57:30.484240",
+    "response_data": {}
+  }
+]
