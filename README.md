@@ -86,6 +86,69 @@ A comprehensive full-stack trading platform built with React frontend and FastAP
 - Yarn package manager
 - Git
 
+## 🎯 Quick Start Guide
+
+### Prerequisites ✅
+- Node.js 16+ installed
+- Python 3.8+ installed  
+- MongoDB running (local or cloud)
+- Git installed
+
+### 1. Clone and Setup (2 minutes)
+```bash
+# Clone the repository
+git clone <repository-url>
+cd crib-markets-platform
+
+# Backend setup
+cd backend
+pip install -r requirements.txt
+
+# Frontend setup  
+cd ../frontend
+yarn install
+```
+
+### 2. Configure Environment Variables (1 minute)
+```bash
+# Backend .env file
+cd backend
+cp .env.example .env
+# Edit .env with your settings
+
+# Frontend .env file
+cd ../frontend  
+cp .env.example .env
+# Edit .env with your settings
+```
+
+### 3. Start the Platform (30 seconds)
+```bash
+# Terminal 1 - Start Backend
+cd backend
+uvicorn server:app --host 0.0.0.0 --port 8001 --reload
+
+# Terminal 2 - Start Frontend
+cd frontend
+yarn start
+```
+
+### 4. Access the Platform ✅
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:8001  
+- **API Documentation**: http://localhost:8001/docs
+
+### 5. Test the Platform ✅
+1. Visit http://localhost:3000
+2. Click "Create Account" to register
+3. Login with your credentials
+4. Explore the trading dashboard
+5. Test deposit functionality
+6. Upload KYC documents
+7. Create support tickets
+
+**🎉 You're now running a professional trading platform!**
+
 ## 🔧 Installation & Setup
 
 ### 1. Clone the Repository
