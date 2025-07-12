@@ -151,6 +151,15 @@ yarn start
 
 ## 🔧 Installation & Setup
 
+## 🔧 Detailed Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- Python 3.8+
+- MongoDB (local or cloud)
+- Yarn package manager
+- Git
+
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
@@ -171,7 +180,7 @@ Create `.env` file in the backend directory:
 # Database Configuration
 MONGO_URL=mongodb://localhost:27017/crib_markets
 
-# JWT Configuration
+# JWT Configuration  
 SECRET_KEY=your-secret-key-change-in-production
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
@@ -234,7 +243,7 @@ sudo apt-get install mongodb
 brew install mongodb-community
 
 # Windows
-Download from https://www.mongodb.com/try/download/community
+# Download from https://www.mongodb.com/try/download/community
 ```
 
 #### Start MongoDB
