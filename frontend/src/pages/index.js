@@ -1,0 +1,19 @@
+// Export all page components
+export { LoginPage } from './LoginPage';
+export { SignUpPage } from './SignUpPage';
+export { Dashboard } from './Dashboard';
+export { DocumentUpload } from './DocumentUpload';
+export { BankDetails } from './BankDetails';
+export { OpenLiveAccount } from './OpenLiveAccount';
+export { AccountList } from './AccountList';
+export { ChangeMT5Password } from './ChangeMT5Password';
+export { WithdrawComponent } from './WithdrawComponent';
+export { InternalTransfer } from './InternalTransfer';
+export { DepositReport } from './DepositReport';
+export { WalletHistory } from './WalletHistory';
+export { RewardComponent } from './RewardComponent';
+export { NewsComponent } from './NewsComponent';
+export { MyTickets } from './MyTickets';
+export { NewTicket } from './NewTicket';
+export { ReferralDashboard } from './ReferralDashboard';
+export { AdminDashboard } from './AdminDashboard';
